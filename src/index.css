@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-base: 'Poppins', sans-serif;
+
+  --primary-color: #9d31f1;
+  --secondary-color: #581c87;
+  --black-color: #030303;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body{
+  background: url(http://localhost:3000/static/media/white-waves.7af18e6….png) no-repeat;
+  background-size: cover;
+  background-color: var(--black-color);
+  overflow-x: hidden !important;
+}

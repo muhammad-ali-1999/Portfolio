@@ -54,6 +54,9 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
+              <li>
+                <a href="#" className="menu-logo">  <img src={images.purple} alt="logo" /></a>
+              </li>
               {["Home", "About", "Contact", "Work", "Skills"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>

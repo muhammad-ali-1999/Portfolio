@@ -1,6 +1,11 @@
 .app__header {
   
     padding: 200px 0px;
+
+@media screen and (max-width:540px) {
+        padding: 200px 0px 140px 0px;
+    
+}
 }
 
 .content-main {

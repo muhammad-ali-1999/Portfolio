@@ -1,12 +1,11 @@
 import React from 'react';
 import { easeIn, easeInOut, motion } from 'framer-motion';
 import { images } from '../../constants';
-
 import './Header.scss';
 
 const Header = () => {
   return (
-    <div className='app__header'>
+    <div id='home' className='app__header home'>
         <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1]  }}
         transition={{ duration:0.5, ease:'easeIn' }}
@@ -26,7 +25,7 @@ const Header = () => {
           </div>
           </div>
         <motion.div
-         whileInView={{ x: [300, 0], opacity: [0, 1]  }}
+         whileInView={{ x: [100, 0], opacity: [0, 1]  }}
          transition={{ duration:0.5, ease:'easeIn' }}
         >
         <div className='header-image-col'>
@@ -41,4 +40,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

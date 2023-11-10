@@ -1,36 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+import {urlFor, client} from '../../client';
 import "./About.scss";
-const abouts = [
-  {
-    title: "Wordpress Development",
-    description:
-      "As a WordPress developer, my expertise lies in creating custom themes from scratch that perfectly match my clients brand and vision",
-    imageUrl: images.webdev,
-  },
-  {
-    title: "Web Animations",
-    description:
-      "As a web developer with a passion for animation, I bring websites to life with engaging and interactive animations that captivate visitors and enhance their user experience.",
-    imageUrl: images.webdesign,
-  },
-  {
-    title: "UI/UX",
-    description:
-      "As a UI/UX developer, my main focus is on creating intuitive and engaging user experiences. I am involved in every stage of the design process to ensure that the end result is a enjoyable experience for the user.",
-    imageUrl: images.uiux,
-  },
-  {
-    title: "WebApp Development",
-    description:
-      "As a web app developer, I specialize in creating dynamic and user-friendly web applications using the latest technologies and programming languages.r",
-    imageUrl: images.webapp,
-  },
-];
+
+// for static about data
+
+// const abouts = [
+//   {
+//     title: "UI/UX",
+//     description:
+//       "As a UI/UX developer, my main focus is on creating intuitive and engaging user experiences. I am involved in every stage of the design process to ensure that the end result is a enjoyable experience for the user.",
+//     imageUrl: images.uiux,
+//   },
+//   {
+//     title: "WebApp Development",
+//     description:
+//       "As a web app developer, I specialize in creating dynamic and user-friendly web applications using the latest technologies and programming languages.r",
+//     imageUrl: images.webapp,
+//   },
+// ];
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+    .then((data) =>  setAbouts(data))
+  }, [])
+  
   return (
-    <div className="app__about">
+    <div id="about" className="app__about">
       <h2 className="about-sec-head">
         Effective design
         <span> leads to the</span>
@@ -48,7 +48,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imageUrl} alt="about.title" />
+            <img src={urlFor(about.imgUrl)} alt="about.title" />
             <h2 style={{ marginTop: 20 }}>{about.title}</h2>
             <p style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>

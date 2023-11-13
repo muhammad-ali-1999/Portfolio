@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Tooltip as ReactTooltip } from "react-tooltip";
-
-import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
@@ -25,7 +22,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="skills-sec-head">My <span>Skills</span> & <span>Experiences</span></h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -48,7 +45,7 @@ const Skills = () => {
 
                 }} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p>{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -70,17 +67,10 @@ const Skills = () => {
                       key={work.name}
                     >
                       <h4 className="bold-text">
-                        {work.name} <span>{work.company}</span>{" "}
+                        {work.name} <span> {work.company}</span>{" "}
                       </h4>
                       <p >{work.desc}</p>
                     </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                      content={work.desc}
-                    ></ReactTooltip>
                   </>
                 ))}
               </motion.div>

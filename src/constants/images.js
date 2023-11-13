@@ -17,6 +17,7 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import bootstrap from '../assets/bootstrap.png';
 
 
 import profile from '../assets/profile.png';
@@ -31,13 +32,13 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import menubg from '../assets/menubg.gif';
-import menubg1 from '../assets/menubg1.webp';
 import whitewaves from '../assets/white-waves.png';
 import webapp from '../assets/webapp.png';
 import uiux from '../assets/uiux.png';
 import webdev from '../assets/webdev.png';
 import webdesign from '../assets/webdesign.png';
+import tailwind from '../assets/tailwind.png';
+import wordpress from '../assets/wordpress.png';
 
 export default {
   email,
@@ -48,8 +49,6 @@ export default {
   whitewaves,
   mobile,
   purple,
-  menubg,
-  menubg1,
   api,
   cpp,
   css,
@@ -77,4 +76,7 @@ export default {
   nb,
   skype,
   spotify,
+  bootstrap,
+  tailwind,
+  wordpress
 };

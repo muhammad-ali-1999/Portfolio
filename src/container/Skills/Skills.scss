@@ -2,150 +2,205 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-  }
-  
-  .app__skills-container {
-    width: 80%;
+}
+
+.app__skills-container {
+    width: 100%;
     margin-top: 3rem;
-  
+    display: flex;
+    padding: 0 20px;
+    flex-direction: row;
+    max-width: 1800px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: row;
-  
-    @media screen and (max-width: 900px) {
-      width: 100%;
-      flex-direction: column;
+
+
+    @media screen and (max-width: 1090px) {
+        width: 100%;
+        flex-direction: column;
+        gap: 70px;
     }
-  }
-  
-  .app__skills-list {
+
+    // @media screen and (max-width: 900px) {
+    //     width: 100%;
+    // }
+}
+
+.skills-sec-head {
+    color: var(--white-color);
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 140px;
+
+
+    span {
+        color: var(--secondary-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 545px) {
+        font-size: 1.5rem;
+    }
+}
+
+.app__skills-list {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-  
-    margin-right: 5rem;
-  
+
     @media screen and (max-width: 900px) {
-      margin-right: 0;
-      justify-content: center;
-      align-items: center;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
     }
-  }
-  
-  .app__skills-item {
+}
+
+.app__skills-item {
     flex-direction: column;
     text-align: center;
-  
+
     margin: 1rem;
-  
+
     transition: all 0.3s ease-in-out;
-  
+
     div {
         width: 90px;
         height: 90px;
         border-radius: 50px;
-        background-color: transparent   ;
+        background-color: transparent;
         border: 5px solid;
-      
-      img {
-        width: 70%;
-        height: 70%;
-        border-radius: 40px;
-      }
-  
-      &:hover {
-        box-shadow: 0 0 25px #fef4f5;
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 150px;
-        height: 150px;
-      }
-  
-      @media screen and (max-width: 450px) {
-        width: 70px;
-        height: 70px;
-      }
+
+        img {
+            width: 70%;
+            height: 70%;
+            border-radius: 40px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px #fef4f5;
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+        }
     }
-  
+
     p {
-      font-weight: 500;
-      margin-top: 0.5rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        color: #fff;
     }
-  
+
     @media screen and (min-width: 2000px) {
-      margin: 1rem 2rem;
-  
-      p {
-        margin-top: 1rem;
-      }
+        margin: 1rem 2rem;
+
+        p {
+            margin-top: 1rem;
+        }
     }
-  }
-  
-  .app__skills-exp {
+}
+
+.app__skills-exp {
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-  
+
     @media screen and (max-width: 900px) {
-      margin-top: 2rem;
+        margin-top: 2rem;
     }
-  }
-  
-  .app__skills-exp-item {
+}
+
+.app__skills-exp-item {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
-  }
-  
-  .app__skills-exp-works {
+
+@media screen and (max-width:750px) {
+    flex-direction: column;
+    gap: 30px;
+}
+}
+
+.app__skills-exp-works {
     flex: 1;
-  
+
     .app__skills-exp-work {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-      cursor: pointer;
-  
-      h4 {
-        font-weight: 700;
-      }
-  
-      p {
-        font-weight: 400;
-        color: var(--white-color);
-        margin-top: 5px;
-      }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        cursor: pointer;
+
+        h4 {
+            font-weight: 700;
+
+            span {
+                font-size: 1rem;
+                line-height: 30px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--white-color);
+            margin-top: 5px;
+        }
     }
-  }
-  
-  .app__skills-exp-year {
+}
+
+.app__skills-exp-year {
     margin-right: 3rem;
-  
+
     p {
         border: 3px solid var(--white-color);
-    padding: 0.5rem 0.8rem;
-    border-radius: 10px;
-    font-weight: 500;
-    background-color: var(--secondary-color);
-    font-size: 20px;
-    color: #fff;
+        padding: 0.5rem 0.8rem;
+        border-radius: 10px;
+        font-weight: 500;
+        background-color: var(--secondary-color);
+        font-size: 20px;
+        color: #fff;
+        
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
+    
     }
-  
+
     @media screen and (max-width: 450px) {
-      margin-right: 1rem;
+        margin-right: 1rem;
     }
-  }
-  
-  .skills-tooltip {
+}
+
+.skills-tooltip {
     max-width: 300px !important;
     background-color: var(--white-color) !important;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
@@ -155,10 +210,10 @@
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;
-  
+
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem !important;
-      max-width: 500px !important;
-      line-height: 2 !important;
+        font-size: 1.75rem !important;
+        max-width: 500px !important;
+        line-height: 2 !important;
     }
-  }
+}

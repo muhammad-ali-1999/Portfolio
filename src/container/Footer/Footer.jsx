@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { images } from '../../constants';
+import { client } from '../../client';
 
 import './Footer.scss';
 

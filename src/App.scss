@@ -55,7 +55,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--white-color);
   text-transform: capitalize;
 
   span {
@@ -66,15 +66,15 @@
     font-size: 4rem;
   }
 
-  @media screen and (max-width: 450px) {
-    font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
   }
 }
 
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
+  color: var(--white-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {

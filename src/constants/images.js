@@ -39,9 +39,11 @@ import webdev from '../assets/webdev.png';
 import webdesign from '../assets/webdesign.png';
 import tailwind from '../assets/tailwind.png';
 import wordpress from '../assets/wordpress.png';
+import personalemail from '../assets/personalemail.png';
 
 export default {
   email,
+  personalemail,
   webdesign,
   webapp,
   webdev,

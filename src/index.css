@@ -7,6 +7,8 @@
   --secondary-color: #581c87;
   --black-color: #030303;
   --white-color: #ffffff;
+  --rgba-color: rgba(188, 65, 211, 0.7);
+  --dark-color: #281536;
 }
 
 * {

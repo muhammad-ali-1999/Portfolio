@@ -33,7 +33,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <h2 className="testi-sec-head">
+      <h2 id="testimonials" className="testi-sec-head">
         <span>Client</span> Testimonials
       </h2>
       {testimonials.length && (
@@ -62,7 +62,7 @@ const Testimonial = () => {
           </div>
         </>
       )}
-      <div className="app__testimonial-brands">
+      <div  className="app__testimonial-brands">
         {brands.map((brands) => (
        
        <motion.div

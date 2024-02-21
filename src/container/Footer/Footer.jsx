@@ -54,7 +54,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="form-sec-head">
+      <h2 id="contact" className="form-sec-head">
         LET'S <span>CONTACT</span> WITH ME
       </h2>
 
@@ -79,6 +79,7 @@ const Footer = () => {
               name="name"
               value={name}
               onChange={handleChangeInput}
+              required
             />
             <p className="error" id="name-err">
               Please fill out this field
@@ -92,6 +93,7 @@ const Footer = () => {
               name="email"
               value={email}
               onChange={handleChangeInput}
+            required 
             />
             <p className="error" id="email-err">
               Please fill out this field
@@ -109,7 +111,7 @@ const Footer = () => {
             <button type="button" onClick={handleSubmit}>
               {loading ? "Sending" : "Send message"}
             </button>
-            <a className="resume-link" href="#">
+            <a className="resume-link" href="https://resume.io/r/73UxP1tNS" target="_blank">
               View Resume
             </a>
           </div>

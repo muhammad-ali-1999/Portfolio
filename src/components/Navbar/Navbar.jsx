@@ -15,10 +15,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.purple} alt="logo" />
+      <a href="/"><img src={images.purple} alt="logo" /></a>
       </div>
       <ul className="app__navbar-links">
-        {["Home", "About", "Contact", "Work", "Skills"].map((item) => (
+        {["home", "about", "work", "skills","testimonials", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <li className="p-text icon-li">
         <div />
           <a
-            href="https://github.com/Abdul-Rafay-2002"
+            href="https://github.com/muhammad-ali-1999"
             target="_blank"
             rel="noreferrer"
           >
@@ -37,7 +37,7 @@ const Navbar = () => {
         <li className="p-text icon-li">
         <div />
           <a
-            href="https://www.linkedin.com/in/abdul-rafay-3bb521231/"
+            href="https://www.linkedin.com/in/muhammad-ali-5bb085220/"
             target="_blank"
             rel="noreferrer"
           >
@@ -57,7 +57,7 @@ const Navbar = () => {
               <li>
                 <a href="#" className="menu-logo">  <img src={images.purple} alt="logo" /></a>
               </li>
-              {["Home", "About", "Contact", "Work", "Skills"].map((item) => (
+              {["home", "about", "work", "skills","testimonials", "contact"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { easeIn, easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import './Header.scss';
 
@@ -29,7 +29,7 @@ const Header = () => {
          transition={{ duration:0.5, ease:'easeIn' }}
         >
         <div className='header-image-col'>
-          <img src={images.profile} alt="profile-bg" />
+         <img src={images.profile} alt="profile-bg" />
           </div>
         </motion.div>
 

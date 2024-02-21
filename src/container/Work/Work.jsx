@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="about-sec-head" style={{marginBottom: 40}}>My Creative <span>Portfolio</span> </h2>
+      <h2 id='work' className="about-sec-head" style={{marginBottom: 40}}>My Creative <span>Portfolio</span> </h2>
 
       <div className="app__work-filter">
         {[    'WordPress',

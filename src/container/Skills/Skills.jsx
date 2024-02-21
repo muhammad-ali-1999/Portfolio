@@ -22,7 +22,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="skills-sec-head">My <span>Skills</span> & <span>Experiences</span></h2>
+      <h2 id="skills" className="skills-sec-head">My <span>Skills</span> & <span>Experiences</span></h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

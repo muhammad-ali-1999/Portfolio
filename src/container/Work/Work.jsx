@@ -45,8 +45,7 @@ const Work = () => {
           'HTML5',
           'JavaScript',
           'CSS3',
-          'React Js',
-          'Next Js',
+          'Shopify',
           'All',].map((item, index) => (
           <div
             key={index}
